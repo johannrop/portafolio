@@ -187,7 +187,7 @@ a{
   
 }
 .divTituloPresentacion{
-  background: rgb(0,38,202);
+/*   background: rgb(0,38,202); */
   background: linear-gradient(210deg, rgba(0,38,202,1) 0%, rgba(10,161,221,1) 25%, rgba(33,85,205,1) 100%);
   box-shadow: 5px 8px 25px -5px rgba(0,38,202,50%);
   width: 100%;
@@ -233,22 +233,35 @@ a{
   justify-content:center;
   flex-direction: column;
   align-items: center;
-  padding: 100px;
+  /* padding: 100px; */
+  box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.37);
   
 }
 
-
+.tituloActitudes{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 40px;
+  width: 100%;
+  padding: 4px;
+  background: rgb(0,38,202);
+  background: linear-gradient(210deg, rgba(0,38,202,1) 0%, rgba(10,161,221,1) 25%, rgba(33,85,205,1) 100%);
+  align-items: center;
+  box-shadow: 5px 8px 25px -5px rgba(0,38,202,50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #000000;
+}
 
 #pTar{
-  font-size: 30px;
-  color: #0026ca;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 .tecnologias img{
-  width: 80%;
-  height: 60%;
-  border: 1px solid #0026ca;
-  border-radius: 8px;
+  width: 100%;
+  height: 208px;
 }
 
  p{
@@ -260,23 +273,21 @@ a{
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
-    padding:20px 100px 20px 100px;
+    padding:20px 100px 48px 100px;
     justify-content: center;
+    font-size: 18px;
 }
 
 .tarjetaTec{
   width: 250px;
-  align-content: center;
-  background: #79DAE8;
-  text-align: center;
-  padding: 5px;
-  border: 1px solid #0026ca;
-  border-radius: 18px
+  height: 368px;
+  text-align: left;
+  background: #f7f7f7;
   
 }
 
 .tarjetaTec:hover{
-  background:#6dc4d1;
+  font-size: 20px;
   -webkit-animation:jump 1s ease 0s 1 normal;
   -moz-animation:jump 1s ease 0s 1 normal;
   -ms-animation:jump 1s ease 0s 1 normal;
@@ -299,17 +310,51 @@ a{
 
   }
 
+.contendidoDivTec{
+  padding: 12px;
+  font-family: 'Roboto', sans-serif;
+  
+
+}
+ 
+
 .tarjetaTec span{
   margin-top: 12px;
-  color: #fff;
   font-weight: bold;
-  text-shadow: 0 0 2px #2155CD;
-
-  
+  color: #000000;
 }
+
+
 
 .tarjetaTec p{
   color: #363636;
+}
+
+
+.divFooter{
+  color: white;
+  background: linear-gradient(210deg, rgba(0,38,202,1) 0%, rgba(10,161,221,1) 25%, rgba(33,85,205,1) 100%);
+  box-shadow: 5px 8px 25px -5px rgba(0,38,202,50%);
+  margin-top: 50px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.divFooter span{
+  padding: 10px;
+}
+
+.divFooter img{
+  border-radius: 10px;
+  height: 124px;
+}
+
+.infoFooter{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 /* finaliza el css de slide */
