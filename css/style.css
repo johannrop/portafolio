@@ -185,8 +185,7 @@ a{
   padding: 70px 60px 10px 60px;
 }
 .divTituloPresentacion{
-  background: linear-gradient(210deg, rgba(0,38,202,1) 0%, rgba(10,161,221,1) 25%, rgba(33,85,205,1) 100%);
-  box-shadow: 5px 8px 25px -5px rgba(0,38,202,50%);
+  background: #6b71db url(https://i.ibb.co/jzKmwrn/imgDiv3.png) center center/cover no-repeat local;
   width: 100%;
   text-align: center;
   color: white;
@@ -234,14 +233,13 @@ a{
   height: 40px;
   width: 100%;
   margin-top: 40px;
-  background: rgb(0,38,202);
-  background: linear-gradient(210deg, rgba(0,38,202,1) 0%, rgba(10,161,221,1) 25%, rgba(33,85,205,1) 100%);
   align-items: center;
-  box-shadow: 5px 8px 25px -5px rgba(0,38,202,50%);
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: #000000;
+  background: #6b71db url(https://i.ibb.co/fkvh6VN/imgDiv.png) center center/cover no-repeat local;
+  
 }
 
 #pTar{
