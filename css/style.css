@@ -4,9 +4,11 @@ body{
     font-family: 'Goldman', cursive;
     margin: 0;
     color: white;
-   
-    
 }
+
+/* comienzo del Header */
+
+
 
 .menuNavegacion{
   padding: 4px;
@@ -25,7 +27,7 @@ body{
 }
 
 .logo{
-  background-color: #79DAE8;
+  background: #6b71db url(https://i.ibb.co/N1GT9kG/banner13.png) center center/cover no-repeat local;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -34,7 +36,7 @@ body{
 }
 
 .logo img{
-  width: 94px;
+  width: 46px;
   padding-right: 12px;
 
 }
@@ -50,7 +52,7 @@ body{
 }
 
 .divImgNav img{
-  width: 30px;
+  width: 16px;
 }
 
 .navLi{
@@ -59,8 +61,8 @@ body{
   width: 124px;
   font-size: 12px;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
-
 }
+
 .navLi:hover{
   border-bottom: 1px solid white;
 
@@ -70,19 +72,17 @@ body{
   border-bottom: 2px solid #0026ca;
 }
 
-
 a{
   text-decoration: none;
   color: white;
- 
 }
+/* fin del Header */
 
-/* comienza el css de slide */
 
+/* comienza el slide */
 #carrusel{
   padding: 30px 60px 0 60px;
 }
-
 .slide {
   position: relative;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
@@ -175,19 +175,17 @@ a{
     li:nth-child(3) .slide-circulo {
   color: #428bca;
 }
+/* termina slide */
 
-/* termina el css de slide */
 
-
+/* comienza la section presentacion */
 .secPresentacion{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px 220px 10px 220px;
-  
+  padding: 70px 60px 10px 60px;
 }
 .divTituloPresentacion{
-/*   background: rgb(0,38,202); */
   background: linear-gradient(210deg, rgba(0,38,202,1) 0%, rgba(10,161,221,1) 25%, rgba(33,85,205,1) 100%);
   box-shadow: 5px 8px 25px -5px rgba(0,38,202,50%);
   width: 100%;
@@ -199,7 +197,6 @@ a{
   background: white;
   -webkit-box-shadow: -1px 5px 8px -4px #000000;
   box-shadow: -1px 5px 8px -4px #000000;
-
 }
 
 .pPresentacion{
@@ -207,7 +204,6 @@ a{
   margin: 0;
   color: white;
   font-size: 18px;
-  
 }
 
 .pesentacion{
@@ -215,18 +211,15 @@ a{
   color: #000000;
   font-size: 22px;
   font-family: 'Roboto', sans-serif;
-  
 }
 
 .pesentacion:hover{
   padding: 0 18px 0 18px;
-  font-size: 26px;
-
-  
+  font-size: 23px;
 }
+/* finaliza section de presentacion */
 
-
-
+/* comienza section de tecnologias */
 .tecnologias{
   color: #0026ca;
   display: flex;
@@ -239,11 +232,9 @@ a{
 }
 
 .tituloActitudes{
-  margin-top: 50px;
-  margin-bottom: 50px;
   height: 40px;
   width: 100%;
-  padding: 4px;
+  margin-top: 40px;
   background: rgb(0,38,202);
   background: linear-gradient(210deg, rgba(0,38,202,1) 0%, rgba(10,161,221,1) 25%, rgba(33,85,205,1) 100%);
   align-items: center;
@@ -268,21 +259,22 @@ a{
   color: black;
 }
 
-
 .divTarjetas{
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
-    padding:20px 100px 48px 100px;
+    padding:48px 100px 48px 100px;
     justify-content: center;
     font-size: 18px;
+    background: #f7f7f7;
+    
 }
 
 .tarjetaTec{
   width: 250px;
   height: 368px;
   text-align: left;
-  background: #f7f7f7;
+  background: #ffffff;
   
 }
 
@@ -329,8 +321,21 @@ a{
 .tarjetaTec p{
   color: #363636;
 }
+/* finaliza section de tecnologias */
 
 
+/* comienza la section de imgPublicitario */
+
+.sectionImgPubli{
+  margin-top: 30px;
+  height: 200px;
+  background: #6b71db url(https://i.ibb.co/Qpdxms2/banner12.png) center center/cover no-repeat local;
+}
+
+/* finaliza la section de imgPublicitario */
+
+
+/* comienza el footer */
 .divFooter{
   color: white;
   background: linear-gradient(210deg, rgba(0,38,202,1) 0%, rgba(10,161,221,1) 25%, rgba(33,85,205,1) 100%);
@@ -342,30 +347,50 @@ a{
   padding: 20px;
 }
 
+.divImgFoot{
+  border-radius: 10px;
+}
+
 .divFooter span{
   padding: 10px;
 }
 
+
+
 .divFooter img{
-  border-radius: 10px;
   height: 124px;
+
+  border-radius: 48px;
+  margin-left: 28px;
+
+   
 }
 
 .infoFooter{
   display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-right: 28px
 }
 
-/* finaliza el css de slide */
+/* finaliza el footer */
+
+
+/* comienza el responsive */
 
 @media (max-width:600px){
   .enlaces{
       flex-direction: column;
   }
+
 }
 
 @media (max-width:800px){
+  .secPresentacion{
+    padding: 70px 32px 10px 32px;
+    
+  }
+
   .menuNavegacion{
     flex-direction: column;
   }
