@@ -8,17 +8,17 @@ body{
 
 /* comienzo del Header */
 
+header{
+  background: #6b71db url(https://i.ibb.co/Cmch63x/background-header.png) center center/cover no-repeat local;
 
+}
 
 .menuNavegacion{
   padding: 4px;
-  background: rgb(0,38,202);
-  background: linear-gradient(210deg, rgba(0,38,202,1) 0%, rgba(10,161,221,1) 25%, rgba(33,85,205,1) 100%);
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 5px 8px 25px -5px rgba(0,38,202,50%);
   height: auto;
 }
 
@@ -27,7 +27,6 @@ body{
 }
 
 .logo{
-  background: #6b71db url(https://i.ibb.co/N1GT9kG/banner13.png) center center/cover no-repeat local;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -37,12 +36,12 @@ body{
 
 .logo img{
   width: 46px;
-  padding-right: 12px;
 
 }
 .logo span{
   font-size: 27px;
   text-shadow: 0 0 2px #2155CD;
+  margin-left: 10px;
 }
 
 .enlaces{
@@ -215,7 +214,7 @@ a{
 
 .pesentacion:hover{
   padding: 0 18px 0 18px;
-  font-size: 23px;
+  font-size: 24px;
 }
 /* finaliza section de presentacion */
 
@@ -227,7 +226,7 @@ a{
   flex-direction: column;
   align-items: center;
   /* padding: 100px; */
-  box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.37);
+ 
   
 }
 
@@ -262,11 +261,12 @@ a{
 .divTarjetas{
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 20px;
     padding:48px 100px 48px 100px;
     justify-content: center;
     font-size: 18px;
-    background: #f7f7f7;
+    background: #e0e0e0;
+    width: 100%;
     
 }
 
@@ -328,8 +328,8 @@ a{
 
 .sectionImgPubli{
   margin-top: 30px;
-  height: 200px;
-  background: #6b71db url(https://i.ibb.co/Qpdxms2/banner12.png) center center/cover no-repeat local;
+  height: 380px;
+  background: #6b71db url(https://i.ibb.co/Vxr4yvg/banner-publicidad.jpg) center center/cover no-repeat local;
 }
 
 /* finaliza la section de imgPublicitario */
@@ -338,13 +338,13 @@ a{
 /* comienza el footer */
 .divFooter{
   color: white;
-  background: linear-gradient(210deg, rgba(0,38,202,1) 0%, rgba(10,161,221,1) 25%, rgba(33,85,205,1) 100%);
-  box-shadow: 5px 8px 25px -5px rgba(0,38,202,50%);
+  background: #6b71db url(https://i.ibb.co/Cmch63x/background-header.png) center center/cover no-repeat local;
   margin-top: 50px;
-  height: 120px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  align-items: center;
 }
 
 .divImgFoot{
@@ -358,9 +358,9 @@ a{
 
 
 .divFooter img{
-  height: 124px;
+  height: 50px;
 
-  border-radius: 48px;
+  border-radius: 8px;
   margin-left: 28px;
 
    
@@ -382,6 +382,9 @@ a{
   .enlaces{
       flex-direction: column;
   }
+  .logo span{
+    display: none;
+  }
 
 }
 
@@ -394,7 +397,24 @@ a{
   .menuNavegacion{
     flex-direction: column;
   }
+
   .divImgNav img{
     display: none;
+  }
+
+  .logo span{
+    display: none;
+  }
+
+  .divImgFoot{
+    display: none;
+  }
+
+  .infoFooter{
+    align-items: center;
+  }
+
+  .divFooter{
+    flex-direction: column;
   }
 }
