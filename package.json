@@ -1,0 +1,14 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "pagina realizada para mostrar mis conocimientos y actitudes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johann Ortiz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
