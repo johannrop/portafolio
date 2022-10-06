@@ -1,29 +1,27 @@
-let modal = document.querySelector(".modal-wrapper");
+let popup = document.querySelector(".envolturaPopup");
 let btn = document.querySelector("button");
-let close_btn = document.querySelector(".modal-close");
+let popupClose = document.querySelector(".popupClose");
 
 btn.addEventListener("click", display);
 
 //  display the modal after 3 second of page load
 
-setTimeout(() => {
-  display();
-}, 3000);
+
 
 function display() {
-  modal.style.display = "block";
+  popup.style.display = "block";
 }
 
-//  when the user clicks on X button,close the modal
-close_btn.addEventListener("click", hide);
+//  when the user clicks on X button,close the popup
+popupClose.addEventListener("click", hide);
 
-// when user clicks anywhere outside the modal, close modal
+/* // when user clicks anywhere outside the popup, close popup
 window.addEventListener("click", (event) => {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == popup) {
+    popup.style.display = "none";
   }
-});
+}); */
 
 function hide() {
-  modal.style.display = "none";
+  popup.style.display = "none";
 }
