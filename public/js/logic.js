@@ -14,23 +14,10 @@ let sectionImgPubli = document.getElementById('sectionImgPubli')
 let sectionConocimientos = document.getElementById('sectionConocimientos')
 let seccionInicio = ['sectionCarrusel', 'sectionPresentacion', 'sectionTecnologias', 'sectionImgPubli']
 
-let varDesarrollo = document.getElementById('desarrollo')
 
-
-
-
-/* let Tardesarrollo = document.getElementById('desarrollo')
-Tardesarrollo.addEventListener('click',mostrar)
-let eventDesarrollo = document.getElementById('eventDesarrollo')  */
 
 liConocimientos.addEventListener('click',conocimientos)
 liInicio.addEventListener('click',inicio)
-
-let nameee= 'holiiiiis'
-saludar(nameee)
-function saludar(intro){
-    console.log(intro)
-}
 
 let arreglo =[]
 
@@ -155,7 +142,8 @@ let git = new Tarjetas (
     'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
 
 listaConocimientos.push(javaScript, java, html5, css, angular, spring, git)
-
+let metodoTemp   
+let ocultarTemp
 
 function conocimientos(){    
    
@@ -176,14 +164,16 @@ function conocimientos(){
        })
        listaConocimientos = []
 }
-
+let popupClose
 function inicio(){
-let metodoTemp   
+
 mostrarInicio()
    sectionConocimientos.style.display = 'none'
    listaActitudes.forEach((actitud) => {
     console.log(actitud.titulo)
     metodoTemp = "mostrar('" + actitud.id2 +"')"
+    ocultarTemp = "hide('" + actitud.id2 +"')"
+    console.log(ocultarTemp)
     tipoActitud = `<a id=${actitud.id}  onClick=${metodoTemp} >
                         <div class="tarjetaTec">
                             <img src=${actitud.img1} alt="">
@@ -192,40 +182,39 @@ mostrarInicio()
                                 <p>${actitud.descripcion1}</p>
                             </div>
                         </div>
-                    </a>`       
-    divTarjetas.innerHTML += tipoActitud
-    console.log(metodoTemp)
-    crearPopUp(actitud.id, actitud.id2, actitud.img2, actitud.titulo, actitud.descripcion2)
-    metodoTemp = null
-   })
-   listaActitudes = [] 
-}
-
-    let popupClose
-
-    function crearPopUp(id1, id2, img, titulo, descripcion) {
-        let inserPopUp = `
-                        <div id=${id2} class="envolturaPopup">
+                    </a>
+                    <div id=${actitud.id2} onClick=${ocultarTemp} class="envolturaPopup" >
                             <div class="popup">
                                 <div class="popupClose">X</div>
                                     <div class="modal-content">
-                                        <img src=${img} alt="">
-                                        <span>${titulo}</span>
-                                        <p>${descripcion}</p>
+                                        <img src=${actitud.img2} alt="">
+                                        <span>${actitud.titulo}</span>
+                                        <p>${actitud.descripcion2}</p>
                                     </div>
                             </div>
-                        </div>`       
-    divTarjetas.innerHTML += inserPopUp
-    popupClose = document.querySelector(".popupClose");
-  }
+                    </div>`       
+    divTarjetas.innerHTML += tipoActitud
+    console.log(metodoTemp)
 
-    function mostrar(x){
-        let tempEvent = document.getElementById(x)
-        tempEvent.style.display = "block";
-  }  
 
-function hide() {
-    popupClose.style.display = "none";
+   })
+
+   popupOcul = document.querySelector('.envolturaPopup')
+   popupClose = document.querySelector(".popupClose");
+   popupClose.addEventListener('click',hide)
+   listaActitudes = [] 
+}
+
+
+
+function mostrar(x){
+    let tempEvent = document.getElementById(x)
+    tempEvent.style.display = "block";
+}  
+
+function hide(z) {
+    let occult = document.getElementById(z)
+    occult.style.display = 'none'
 }
 
 function ocultarInicio(){
