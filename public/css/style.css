@@ -9,7 +9,13 @@ body{
 /* comienzo del Header */
 
 header{
-  background: #6b71db url(https://i.ibb.co/Cmch63x/background-header.png) center center/cover no-repeat local;
+  /**background: #6b71db url(https://i.ibb.co/Cmch63x/background-header.png) center center/cover no-repeat local; */
+  background-color: #2155cd;
+background-image: -webkit-linear-gradient(0deg, #2155cd 0%, #0aa1dd 33%, #79dae8 66%, #e8f9fd 100%);
+background-image: -moz-linear-gradient(0deg, #2155cd 0%, #0aa1dd 33%, #79dae8 66%, #e8f9fd 100%);
+background-image: -o-linear-gradient(0deg, #2155cd 0%, #0aa1dd 33%, #79dae8 66%, #e8f9fd 100%);
+background-image: linear-gradient(0deg, #2155cd 0%, #0aa1dd 33%, #79dae8 66%, #e8f9fd 100%);
+
 
 }
 
@@ -51,7 +57,7 @@ header{
   width: 100%;
   background: rgb(255, 255, 255);
   padding: 20px;
-  margin: 35vh auto;
+  margin: 12vh auto;
   border-radius: 5px;
   position: relative;
 }
@@ -137,7 +143,8 @@ a{
 
 /* comienza el slide */
 #carrusel{
-  padding: 30px 60px 0 60px;
+  display: flex;
+  justify-content: center;
 }
 .slide {
   position: relative;
@@ -242,7 +249,12 @@ a{
   padding: 70px 60px 10px 60px;
 }
 .divTituloPresentacion{
-  background: #6b71db url(https://i.ibb.co/jzKmwrn/imgDiv3.png) center center/cover no-repeat local;
+  /* background: #6b71db url(https://i.ibb.co/jzKmwrn/imgDiv3.png) center center/cover no-repeat local; */
+  background-color: #2155cd;
+background-image: -webkit-linear-gradient(0deg, #2155cd 0%, #0aa1dd 100%);
+background-image: -moz-linear-gradient(0deg, #2155cd 0%, #0aa1dd 100%);
+background-image: -o-linear-gradient(0deg, #2155cd 0%, #0aa1dd 100%);
+background-image: linear-gradient(0deg, #2155cd 0%, #0aa1dd 100%);
   width: 100%;
   text-align: center;
   color: white;
@@ -295,7 +307,13 @@ a{
   justify-content: center;
   align-items: center;
   border-bottom: #000000;
-  background: #6b71db url(https://i.ibb.co/fkvh6VN/imgDiv.png) center center/cover no-repeat local;
+  background-color: #2155cd;
+  background-image: -webkit-linear-gradient(0deg, #2155cd 0%, #0aa1dd 100%);
+  background-image: -moz-linear-gradient(0deg, #2155cd 0%, #0aa1dd 100%);
+  background-image: -o-linear-gradient(0deg, #2155cd 0%, #0aa1dd 100%);
+  background-image: linear-gradient(0deg, #2155cd 0%, #0aa1dd 100%);
+
+  /*background: #6b71db url(https://i.ibb.co/fkvh6VN/imgDiv.png) center center/cover no-repeat local; */
   
 }
 
@@ -310,7 +328,8 @@ a{
 }
 
  p{
-  color: black;
+  color: #7d7c7c;
+  
 }
 
 .divTarjetas{
@@ -321,10 +340,14 @@ a{
     padding-bottom: 30px;
     justify-content: center;
     font-size: 18px;
-    background: #e0e0e0;
+    background: #E8F9FD;
     width: 100%;
 
     
+}
+
+.parrafoTarjeta{
+  color: #363636;
 }
 
 .tarjetaTec{
@@ -387,7 +410,10 @@ a{
 .sectionImgPubli{
   margin-top: 30px;
   height: 380px;
-  background: #6b71db url(https://i.ibb.co/Vxr4yvg/banner-publicidad.jpg) center center/cover no-repeat local;
+  width: 100%;
+
+ 
+  background: #6b71db url(../img/banner2.png) center center/cover no-repeat local; 
 }
 
 /* finaliza la section de imgPublicitario */
@@ -410,7 +436,14 @@ a{
 /* comienza el footer */
 .divFooter{
   color: white;
-  background: #6b71db url(https://i.ibb.co/Cmch63x/background-header.png) center center/cover no-repeat local;
+  /*background: #6b71db url(https://i.ibb.co/Cmch63x/background-header.png) center center/cover no-repeat local; */
+  background-color: #2155cd;
+background-image: -webkit-linear-gradient(0deg, #2155cd 0%, #0aa1dd 50%, #79dae8 100%);
+background-image: -moz-linear-gradient(0deg, #2155cd 0%, #0aa1dd 50%, #79dae8 100%);
+background-image: -o-linear-gradient(0deg, #2155cd 0%, #0aa1dd 50%, #79dae8 100%);
+background-image: linear-gradient(0deg, #2155cd 0%, #0aa1dd 50%, #79dae8 100%);
+
+
   margin-top: 50px;
   height: auto;
   display: flex;

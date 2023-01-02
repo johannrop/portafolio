@@ -26,9 +26,7 @@ let listaConocimientos = []
 let tipoActitud 
 
 class Tarjetas{
-    constructor(var1, var2, id, id2, img1, img2, titulo, descripcion1, descripcion2){
-        this.var1 = var1
-        this.var2 = var2
+    constructor(id, id2, img1, img2, titulo, descripcion1, descripcion2){
         this.id = id
         this.id2 = id2
         this.img1= img1
@@ -42,43 +40,39 @@ class Tarjetas{
 /* ACTITUDES */
 
 let desarrollo = new Tarjetas (
-    'desarrolloEnlace','desarrolloPopUp',
     'desarrollo','eventDesarrollo',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
-    'DESARROLO','Lorem, ipsum dolor sit amet consectetur adipisicing elit.','descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
+    'DESARROLO','Imagine y cree su sistema',
+    'La programación es una parte importante en el ambito de desarollo de software, ya que es el paso de lo imaginado a su creación. Esto gracias a los diferente jenguajes de programación que existen, cada uno ajustansoe a la necesidades requeridas')
 
 let baseDatos = new Tarjetas (
-    'baseDatosEnlace','baseDatosPopUp',
     'baseDatos','eventBaseDatos',
     'https://i.ibb.co/ZJFxsdt/database.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
-    'BASE DE DATOS','Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
+    'BASE DE DATOS','Alamacene su información importante.',
+    'Gracias a las base de datos podemos almacenar y ver nuestra informacion de manera segura. Estas base de datos se integran a los sistemas brindando mayor seguridad y rendimiento al realizar operaciones sobre estos datos almacenados.')
 
 let metodologia = new Tarjetas (
-    'metodologiaEnlace','metodologiaPopUp',
     'metodologia', 'eventMetodologia',
     'https://i.ibb.co/k40dYQC/metodologia.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
-    'METODOLOGIA','Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
+    'METODOLOGIA','Por que el tiempo es oro.',
+    'La utilización de metodologias de trabajo en el ambito de desarrollo de software, se hace indispensable para culminar las metas propuestas en el tiempo acordado.')
 
 let controlVersiones = new Tarjetas (
-    'controlVersionesEnlace','controlVersionesPopUp',
     'controlVersiones', 'eventControlVersiones',
     'https://i.ibb.co/LJzNcfz/git.png',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
-    'CONTROL DE VERSIONES','Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
+    'CONTROL DE VERSIONES','Conocer cada cambio en el desarrollo.',
+    'Cuando se desarrolla un sistema es importante es importante conocer cada cambio que se va haciendo en el codigo; por ello implementar un controlador de versiones es indispensable ya que este nos brinda información de cada cambio, ademas de verlos detalladamente.')
 
 let cleanCode  = new Tarjetas (
-    'cleanCodeEnlace','cleanCodePopUp',
     'cleanCode','eventCleanCode',
     'https://i.ibb.co/pJV8wYR/develpoing.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
-    'CLEAN CODE','Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
+    'CLEAN CODE','Por que lo simple enamora.',
+    'Escribir un codigo es una caulidad importante para el desarrollo de software, ya que ayuda a entender de una manera eficiente el codigo escrito. ademas de volver mas agil la comprension de este.')
 
 listaActitudes.push(desarrollo, baseDatos, metodologia, controlVersiones, cleanCode)
 
@@ -86,15 +80,13 @@ listaActitudes.push(desarrollo, baseDatos, metodologia, controlVersiones, cleanC
 /* CONOCIMIENTOS */
 
 let javaScript = new Tarjetas (
-    'javaSEnlace','javaPopUp',
     'javaScript','eventjavaScript',
     'https://i.ibb.co/pJV8wYR/develpoing.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
-    'JAVA SCRIPT','Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+    'JAVASCRIPT','JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas.',
     'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
 
 let java = new Tarjetas (
-    'javaEnlace','javaPopUp',
     'java','eventjava',
     'https://i.ibb.co/pJV8wYR/develpoing.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
@@ -102,7 +94,6 @@ let java = new Tarjetas (
     'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
 
 let html5 = new Tarjetas (
-    'html5Enlace','html5PopUp',
     'html5','eventhtml5',
     'https://i.ibb.co/pJV8wYR/develpoing.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
@@ -110,7 +101,6 @@ let html5 = new Tarjetas (
     'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
 
 let css = new Tarjetas (
-    'cssEnlace','cssPopUp',
     'css','eventcss',
     'https://i.ibb.co/pJV8wYR/develpoing.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
@@ -118,7 +108,6 @@ let css = new Tarjetas (
     'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
 
 let angular = new Tarjetas (
-    'angularEnlace','angularPopUp',
     'angular','eventangular',
     'https://i.ibb.co/pJV8wYR/develpoing.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
@@ -126,7 +115,6 @@ let angular = new Tarjetas (
     'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
 
 let spring = new Tarjetas (
-    'springEnlace','springPopUp',
     'spring','eventSpring',
     'https://i.ibb.co/pJV8wYR/develpoing.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
@@ -134,7 +122,6 @@ let spring = new Tarjetas (
     'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
 
 let git = new Tarjetas (
-    'gitEnlace','gitPopUp',
     'git','eventGit',
     'https://i.ibb.co/pJV8wYR/develpoing.jpg',
     'https://i.ibb.co/x6FM3zV/metodo.jpg',
@@ -142,38 +129,57 @@ let git = new Tarjetas (
     'descripcion2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.')
 
 listaConocimientos.push(javaScript, java, html5, css, angular, spring, git)
-let metodoTemp   
-let ocultarTemp
 
+
+
+let nombreSection
 function conocimientos(){    
-   
+    
     ocultarInicio()
-    sectionConocimientos.style.display='flex'
+    sectionConocimientos.style.display = 'flex'
+    console.log(listaConocimientos)
     listaConocimientos.forEach((actitud) => {
-        console.log(actitud.titulo)
-        tipoActitud = `<a href="#">
-                    <div class="tarjetaTec">
-                        <img src=${actitud.img1} alt="">
-                        <div class="contendidoDivTec">
-                            <span>${actitud.titulo}</span>
-                            <p>${actitud.descripcion1}</p>
-                        </div>
-                    </div>
-                </a>` 
+
+        metodoTemp = "mostrar('" + actitud.id2 +"')"
+        ocultarTemp = "hide('" + actitud.id2 +"')"
+        tipoActitud = `<a id=${actitud.id}  onClick=${metodoTemp} >
+                            <div class="tarjetaTec">
+                                <img src=${actitud.img1} alt="">
+                                <div class="contendidoDivTec">
+                                    <span>${actitud.titulo}</span>
+                                    <p>${actitud.descripcion1}</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div id=${actitud.id2} onClick=${ocultarTemp} class="envolturaPopup" >
+                                <div class="popup">
+                                    <div class="popupClose">X</div>
+                                        <div class="modal-content">
+                                            <img src=${actitud.img2} alt="">
+                                            <span>${actitud.titulo}</span>
+                                            <p class="parrafoTarjeta">${actitud.descripcion2}</p>
+                                        </div>
+                                </div>
+                        </div>`       
         divTarjetasCon.innerHTML += tipoActitud
        })
-       listaConocimientos = []
+    
+       popupOcul = document.querySelector('.envolturaPopup')
+       popupClose = document.querySelector(".popupClose");
+       popupClose.addEventListener('click',hide)
+       listaConocimientos = []  
 }
 let popupClose
 function inicio(){
 
 mostrarInicio()
+    
+    nombreSection = 'inicio'
    sectionConocimientos.style.display = 'none'
-   listaActitudes.forEach((actitud) => {
-    console.log(actitud.titulo)
+   /* crearTarjetasPopUps(listaActitudes, nombreSection)  */
+    listaActitudes.forEach((actitud) => {
     metodoTemp = "mostrar('" + actitud.id2 +"')"
     ocultarTemp = "hide('" + actitud.id2 +"')"
-    console.log(ocultarTemp)
     tipoActitud = `<a id=${actitud.id}  onClick=${metodoTemp} >
                         <div class="tarjetaTec">
                             <img src=${actitud.img1} alt="">
@@ -194,21 +200,66 @@ mostrarInicio()
                             </div>
                     </div>`       
     divTarjetas.innerHTML += tipoActitud
-    console.log(metodoTemp)
-
-
    })
 
    popupOcul = document.querySelector('.envolturaPopup')
    popupClose = document.querySelector(".popupClose");
    popupClose.addEventListener('click',hide)
-   listaActitudes = [] 
+   listaActitudes = []  
+}
+
+function crearTarjetasPopUps(x,nombre){
+    let metodoTemp = null   
+    let ocultarTemp = null
+   
+    x.forEach((actitud) => {
+        
+        metodoTemp = "mostrar('" + actitud.id2 +"')"
+        ocultarTemp = "hide('" + actitud.id2 +"')"
+        tipoActitud = `<a id=${actitud.id}  onClick=${metodoTemp} >
+                            <div class="tarjetaTec">
+                                <img src=${actitud.img1} alt="">
+                                <div class="contendidoDivTec">
+                                    <span>${actitud.titulo}</span>
+                                    <p>${actitud.descripcion1}</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div id=${actitud.id2} onClick=${ocultarTemp} class="envolturaPopup" >
+                                <div class="popup">
+                                    <div class="popupClose">X</div>
+                                        <div class="modal-content">
+                                            <img src=${actitud.img2} alt="">
+                                            <span>${actitud.titulo}</span>
+                                            <p>${actitud.descripcion2}</p>
+                                        </div>
+                                </div>
+                        </div>`
+                        
+                        if (nombre === 'inicio'){
+                            divTarjetas.innerHTML += tipoActitud
+                                }else if(nombre === 'conocimientos'){
+                                    divTarjetasCon.innerHTML += tipoActitud 
+                                }
+       })
+
+       
+
+       listaActitudes = []
+
+       console.log(x)
+       popupOcul = document.querySelector('.envolturaPopup')
+       popupClose = document.querySelector(".popupClose");
+       popupClose.addEventListener('click',hide)
+       
 }
 
 
 
 function mostrar(x){
-    let tempEvent = document.getElementById(x)
+    let tempEvent
+    console.log(x)
+    tempEvent = document.getElementById(x)
     tempEvent.style.display = "block";
 }  
 
